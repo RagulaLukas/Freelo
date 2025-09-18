@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+	--font-heading: "Montserrat", sans-serif;
+	--font-sans: "Wotfard", "Roboto", sans-serif;
+}
+
+.page-enter-active,
+.page-leave-active {
+	transition: all 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+	filter: blur(1rem);
+}
+
+.task-enter-from {
+	opacity: 0;
+}
+.task-enter-to {
+	opacity: 1;
+}
+.task-leave-from {
+	opacity: 1;
+}
+.task-leave-to {
+	opacity: 0;
+}
+
+.task-enter-active,
+.task-leave-active {
+	transition: all 0.3s ease-in-out;
+}
